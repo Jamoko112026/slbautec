@@ -1,0 +1,27 @@
+{
+  "name": "SL Bautec – Tiefbau & Infrastruktur",
+  "short_name": "SL Bautec",
+  "description": "Glasfaserbau, Tiefbau und Infrastruktur in Hamburg.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1E261C",
+  "theme_color": "#2A3326",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/slb-favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/slb-favicon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
