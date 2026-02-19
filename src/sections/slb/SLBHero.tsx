@@ -51,9 +51,18 @@ export default function SLBHero() {
           Versorger und gewerbliche Bauprojekte im Norden.
         </p>
 
-        <button className="sl-btn mt-10">
-          Unverbindliche Projektanfrage
-        </button>
+       <button
+  className="sl-btn mt-10"
+  onClick={() =>
+    document.getElementById("kontakt")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    })
+  }
+>
+  Unverbindliche Projektanfrage
+</button>
+
 
       </div>
     </section>
