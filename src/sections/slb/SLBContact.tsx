@@ -4,7 +4,6 @@ export default function SLBContact() {
       id="kontakt"
       className="sl-section py-28 px-6 border-t border-white/10"
     >
-
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT – TEXT SIDE */}
@@ -35,26 +34,59 @@ export default function SLBContact() {
         {/* RIGHT – FORM */}
         <div className="sl-card">
 
-          <form className="space-y-5">
+          <form
+            className="space-y-5"
+            action="https://formsubmit.co/dispo@slbautec.de"
+            method="POST"
+          >
 
+            {/* Hidden Settings */}
+            <input
+              type="hidden"
+              name="_subject"
+              value="Neue Projektanfrage – SL BauTec"
+            />
+
+            <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            />
+
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            />
+
+            {/* Firma */}
             <input
               type="text"
+              name="firma"
               placeholder="Firmenname / Ansprechpartner"
+              required
               className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-[var(--sl-accent-main)]"
             />
 
+            {/* Mail */}
             <input
               type="email"
+              name="email"
               placeholder="E-Mail Adresse"
+              required
               className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-[var(--sl-accent-main)]"
             />
 
+            {/* Nachricht */}
             <textarea
               rows={4}
+              name="nachricht"
               placeholder="Kurzbeschreibung Ihres Projekts"
+              required
               className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-[var(--sl-accent-main)] resize-none"
             />
 
+            {/* Button */}
             <button
               type="submit"
               className="sl-btn w-full py-4 rounded-lg"
@@ -71,7 +103,6 @@ export default function SLBContact() {
         </div>
 
       </div>
-
     </section>
   );
 }
