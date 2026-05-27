@@ -35,29 +35,24 @@ export default function SLBContact() {
         <div className="sl-card">
 
           <form
-            className="space-y-5"
-            action="https://formsubmit.co/dispo@slbautec.de"
+            name="kontakt"
             method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            className="space-y-5"
           >
 
-            {/* Hidden Settings */}
+            {/* Netlify Hidden Fields */}
             <input
               type="hidden"
-              name="_subject"
-              value="Neue Projektanfrage – SL BauTec"
+              name="form-name"
+              value="kontakt"
             />
 
-            <input
-              type="hidden"
-              name="_captcha"
-              value="false"
-            />
-
-            <input
-              type="hidden"
-              name="_template"
-              value="table"
-            />
+            {/* Spam Protection */}
+            <p hidden>
+              <input name="bot-field" />
+            </p>
 
             {/* Firma */}
             <input
@@ -65,7 +60,7 @@ export default function SLBContact() {
               name="firma"
               placeholder="Firmenname / Ansprechpartner"
               required
-              className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-[var(--sl-accent-main)]"
+              className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/40 outline-none focus:border-[var(--sl-accent-main)]"
             />
 
             {/* Mail */}
@@ -74,7 +69,7 @@ export default function SLBContact() {
               name="email"
               placeholder="E-Mail Adresse"
               required
-              className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-[var(--sl-accent-main)]"
+              className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/40 outline-none focus:border-[var(--sl-accent-main)]"
             />
 
             {/* Nachricht */}
@@ -83,7 +78,7 @@ export default function SLBContact() {
               name="nachricht"
               placeholder="Kurzbeschreibung Ihres Projekts"
               required
-              className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white outline-none focus:border-[var(--sl-accent-main)] resize-none"
+              className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white placeholder:text-white/40 outline-none focus:border-[var(--sl-accent-main)] resize-none"
             />
 
             {/* Button */}
