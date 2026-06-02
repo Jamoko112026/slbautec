@@ -26,24 +26,26 @@ export default function SLBTrustExtended() {
             </ul>
           </div>
 
-          {/* RIGHT – REFERENZEN / LOGOS */}
-          <div className="grid grid-cols-2 gap-8 items-center">
+          {/* RIGHT – REFERENZ */}
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
 
-            {/* Logo Slot */}
-            <div className="h-16 flex items-center justify-center opacity-70 hover:opacity-100 transition">
-              <span className="text-white/50 text-sm">Telekom Projekt</span>
+            <div className="flex justify-center mb-6">
+              <img
+                src="/slb/logos/telekom-logo.png"
+                alt="Telekom Deutschland"
+                className="h-14 w-auto object-contain opacity-90"
+              />
             </div>
 
-            <div className="h-16 flex items-center justify-center opacity-70 hover:opacity-100 transition">
-              <span className="text-white/50 text-sm">Stadtwerke Infrastruktur</span>
-            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-semibold text-white mb-4">
+                Telekom Deutschland
+              </h3>
 
-            <div className="h-16 flex items-center justify-center opacity-70 hover:opacity-100 transition">
-              <span className="text-white/50 text-sm">Glasfaser Ausbau</span>
-            </div>
-
-            <div className="h-16 flex items-center justify-center opacity-70 hover:opacity-100 transition">
-              <span className="text-white/50 text-sm">Referenz Projekt</span>
+              <p className="text-white/70 leading-relaxed">
+                Durchführung von Tiefbau-, Trassen- und Anschlussarbeiten
+                im Rahmen des Glasfaserausbaus der Telekom in Hamburg.
+              </p>
             </div>
 
           </div>
